@@ -1,9 +1,16 @@
 import emailjs from "@emailjs/browser";
 
 const sendEmail = async (emailData) => {
-  const serviceId = "service_pitm5l7";
-  const templateId = "template_yt8lf5k";
-  const publicKey = "MG1IAQ2ty-Zb7CkmA";
+  // J CRED
+  // const serviceId = "service_pitm5l7";
+  // const templateId = "template_yt8lf5k";
+  // const publicKey = "MG1IAQ2ty-Zb7CkmA";
+
+  // THAER CRED
+  const serviceId = "service_m9z1r25";
+  const templateId = "template_0lk37d7";
+  const publicKey = "H6MA6_vRRWInlwKoR";
+
   // const publicKey = "MG1IAQ2t";
 
   try {

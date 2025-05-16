@@ -96,7 +96,7 @@ function ServiceDetails() {
     `;
 
     const templateParams = {
-      email: "gaafar.ali.330@gmail.com",
+      email: "jaafar.ali.in@gmail.com",
       content: content,
     };
 

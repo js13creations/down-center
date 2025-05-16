@@ -64,10 +64,12 @@ function Survey() {
       Mobile : ${serviceDetails?.bookingDetails?.mobile || ""}
       Day : ${serviceDetails?.bookingDetails?.date || ""}
       Time : ${serviceDetails?.bookingDetails?.timeSlots || ""}
+
+      Feedback : ${feedback}
     `;
 
     const templateParams = {
-      email: "gaafar.ali.330@gmail.com",
+      email: "eyadalmasri2015@gmail.com",
       content: content,
     };
 
