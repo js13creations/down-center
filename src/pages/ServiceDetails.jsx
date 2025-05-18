@@ -96,7 +96,7 @@ function ServiceDetails() {
     `;
 
     const templateParams = {
-      email: "jaafar.ali.in@gmail.com",
+      email: "info@ddsc.ae",
       content: content,
     };
 

@@ -69,7 +69,7 @@ function Survey() {
     `;
 
     const templateParams = {
-      email: "eyadalmasri2015@gmail.com",
+      email: "info@ddsc.ae",
       content: content,
     };
 
