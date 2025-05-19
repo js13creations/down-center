@@ -1,5 +1,6 @@
 import governmentInitiatives from "../constants/governmentInitiative";
-import initiativeSide from "../assets/images/initiative-side.jpeg";
+// import initiativeSide from "../assets/images/initiative-side.jpeg";
+import initiativeSide from "../assets/images/uaeInitiiative.jpeg";
 
 function UAEInitiative() {
   return (
