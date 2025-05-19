@@ -18,13 +18,7 @@ const ServiceCard = ({ service }) => {
           <FontAwesomeIcon icon={faClock} className="me-2 color-main-yellow" />
           {service?.duration}
         </p>
-        <p className="card-text mb-2">
-          <FontAwesomeIcon
-            icon={faMoneyBillWave}
-            className="me-2 color-main-yellow"
-          />
-          {service?.priceEnglish}
-        </p>
+        
         <div className="d-flex justify-content-end align-items-center">
           <button onClick={handleBookNow} className="btn book-now-button">
             Book Now

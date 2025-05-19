@@ -36,8 +36,6 @@ function ServiceDetails() {
   };
 
   useEffect(() => {
-    const VITE_EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    console.log("VITE_EMAILJS_SERVICE_ID ", VITE_EMAILJS_SERVICE_ID);
     Modal.setAppElement("#root");
   }, []);
 
@@ -259,12 +257,6 @@ function ServiceDetails() {
         <div className="col-md-6 mb-4">
           <p>
             <strong>Duration:</strong> {service.duration}
-          </p>
-          <p>
-            <strong>Price:</strong> {service.priceEnglish}
-          </p>
-          <p>
-            <strong>Arabic Price:</strong> {service.priceArabic}
           </p>
         </div>
       </div>

@@ -1,24 +1,22 @@
 import emailjs from "@emailjs/browser";
 
 const sendEmail = async (emailData) => {
-  // J CRED
-  // const serviceId = "service_pitm5l7";
-  // const templateId = "template_yt8lf5k";
-  // const publicKey = "MG1IAQ2ty-Zb7CkmA";
+  const VITE_EMAILJS_SERVICE_ID = await import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const VITE_EMAILJS_TEMPLATE_ID = await import.meta.env
+    .VITE_EMAILJS_TEMPLATE_ID;
+  const VITE_EMAILJS_PUBLIC_KEY = await import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-  // THAER CRED
-  const serviceId = "service_m9z1r25";
-  const templateId = "template_0lk37d7";
-  const publicKey = "H6MA6_vRRWInlwKoR";
-
-  // const publicKey = "MG1IAQ2t";
-
+  console.log({
+    VITE_EMAILJS_SERVICE_ID,
+    VITE_EMAILJS_TEMPLATE_ID,
+    VITE_EMAILJS_PUBLIC_KEY,
+  });
   try {
     const response = await emailjs.send(
-      serviceId,
-      templateId,
+      VITE_EMAILJS_SERVICE_ID,
+      VITE_EMAILJS_TEMPLATE_ID,
       emailData,
-      { publicKey }
+      VITE_EMAILJS_PUBLIC_KEY
     );
 
     console.log("SUCCESS!", response.status, response.text);
@@ -39,7 +37,7 @@ const sendEmail = async (emailData) => {
 
 export const initEmailJS = () => {
   emailjs.init({
-    publicKey: "MG1IAQ2ty-Zb7CkmA",
+    publicKey: "13hYvJQNeeu5diz_Z",
   });
 };
 
